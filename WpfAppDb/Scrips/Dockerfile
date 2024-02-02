@@ -5,7 +5,7 @@ RUN mkdir -p /usr/config
 WORKDIR /usr/config
 
 # Bundle config source
-COPY . /usr/config
+COPY ./* /usr/config
 
 # Grant permissions for to our scripts to be executable
 RUN chmod +x /usr/config/entrypoint.sh
